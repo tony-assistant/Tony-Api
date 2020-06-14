@@ -36,9 +36,11 @@ class WhatsappController {
     }
 
     if (!user) {
+      // await Phone.create();
       await Chat.create({
         message: 1,
         status: true,
+        phone,
       });
 
       return response.status(200).send({

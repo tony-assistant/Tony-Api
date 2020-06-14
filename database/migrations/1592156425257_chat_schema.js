@@ -7,6 +7,7 @@ class ChatSchema extends Schema {
   up() {
     this.create("chats", (table) => {
       table.increments();
+      table.string("phone");
       table.string("message");
       table.string("status");
       table.timestamps();
