@@ -10,6 +10,8 @@ class WhatsappController {
     const welcome = ["Olá", "ola", "oi", "ei", "Oi", "1", "2", "Ola"];
     const isnum = /^\d+$/.test(message);
 
+    const chat = await Chat.query().where("phone", phone).first();
+
     if ((isnum && message.length === 8) || message.length === 6) {
       return response.status(200).send({
         status: true,
