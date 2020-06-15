@@ -318,7 +318,8 @@ class WhatsappController {
           status: true,
           messages: [
             "Certo, esses são os endereços próximos a você.",
-            "Posto BR 1. São Paulo/SP",
+            "Posto Timbiras BR 174. Manaus/AM",
+            "Posto BR KM 12. Manaus/AM",
           ],
         });
       }
