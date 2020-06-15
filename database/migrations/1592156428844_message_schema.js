@@ -1,19 +1,21 @@
-'use strict'
+"use strict";
 
 /** @type {import('@adonisjs/lucid/src/Schema')} */
-const Schema = use('Schema')
+const Schema = use("Schema");
 
 class MessageSchema extends Schema {
-  up () {
-    this.create('messages', (table) => {
-      table.increments()
-      table.timestamps()
-    })
+  up() {
+    this.create("messages", (table) => {
+      table.increments();
+      table.string("message");
+      table.integer("chat_id").unsigned().references("id").inTable("chats");
+      table.timestamps();
+    });
   }
 
-  down () {
-    this.drop('messages')
+  down() {
+    this.drop("messages");
   }
 }
 
-module.exports = MessageSchema
+module.exports = MessageSchema;
