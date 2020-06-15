@@ -1,31 +1,11 @@
-# Adonis fullstack application
+# API Tony Assistente
 
-This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
+A API utiliza as seguintes tecnologias:
 
 1. Bodyparser
 2. Session
 3. Authentication
 4. Web security middleware
 5. CORS
-6. Edge template engine
-7. Lucid ORM
-8. Migrations and seeds
-
-## Setup
-
-Use the adonis command to install the blueprint
-
-```bash
-adonis new yardstick
-```
-
-or manually clone the repo and then run `npm install`.
-
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
-```
+6. Lucid ORM
+7. Migrations and seeds
